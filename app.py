@@ -1,10 +1,10 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
 import requests
+from api import API_KEY
 
-# Nøkkelen
-API_KEY = "f587254324a3b6f5f6559cbf"
-
+#Nøkkel
+API_KEY = ""
 
 root = tk.Tk() #Lager main framen
 root.title("Valutakalkulator") 

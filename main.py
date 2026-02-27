@@ -1,8 +1,7 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
-import requests
 from key import API_KEY # Henter API_KEY variabelen fra key.py
-from api import get_currency, convert_currency #Henter funksjonene fra api.py
+from api import get_currency, convert_currency # Henter funksjonene fra api.py
 
 # Funksjon som viser resultat fra convert_currency!
 def conversion():
@@ -38,8 +37,6 @@ def conversion():
     else:
         result_label.config(text=f"{amount} {base} = {result:.2f} {target}")
 
-#Nøkkel
-API_KEY = ""
 
 root = tk.Tk() #Lager main framen
 root.title("Valutakalkulator")
@@ -72,7 +69,7 @@ from_currency.current(0)
 to_label = tk.Label(root, text="Velg valuta å konvertere til: ")
 to_label.grid(row=2, column=0)
 
-to_currency = ttk.Combobox(root, values = currencies)
+to_currency = ttk.Combobox(root, values=currencies)
 to_currency.grid(row=2, column=1)
 to_currency.current(1)
 

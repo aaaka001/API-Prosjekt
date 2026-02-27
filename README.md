@@ -14,7 +14,7 @@
   - Tkinter (GUI Rammeverk)
   - Tkinter ttk (Moderne widgets)
   - requests (HTTP-kall)
-  - ExchangeRate-API (https://www.exchangerate-api.com/
+  - ExchangeRate-API (https://www.exchangerate-api.com/)
 
 - Hvordan kjøre programmet
   1. Klon repositorien med git, eller nedlast repositorien
@@ -24,6 +24,7 @@
     - source .venv/bin/activate
     - pip install requests
   5. Kjør koden ved å skrive "python main.py" i terminalen.
+
 
 
 

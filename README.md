@@ -1,6 +1,6 @@
 # Valutakalkulator
 
-- Funksjoner
+### Funksjoner
   - Henter alle tilgjengelige valutaer fra API
   - Konverterer mellom to valgfrie valutaer
   - Viser både valutakode og fullt navn
@@ -11,14 +11,14 @@
     -  Samme valuta valgt
     -  API-feil
 
-- Teknologier brukt
+### Teknologier brukt
   - Python
   - Tkinter (GUI Rammeverk)
   - Tkinter ttk (Moderne widgets)
   - requests (HTTP-kall)
   - ExchangeRate-API (https://www.exchangerate-api.com/)
 
-- Hvordan kjøre programmet
+### Hvordan kjøre programmet
   1. Klon repositorien med git, eller nedlast repositorien
   2. Lag en ny fil som heter key.py og lag en variabel som heter API_KEY og sett inn API nøkkelen din.
   3. Lag en virtual environment og installer requests ved å gjøre det følgende i terminalen:
@@ -43,3 +43,4 @@
 - main.py – GUI og brukerinteraksjon
 - api.py – API-kall og logikk
 - key.py – API-nøkkel (ikke inkludert i repo)
+

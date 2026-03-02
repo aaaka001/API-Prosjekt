@@ -2,9 +2,11 @@
 
 ### Hva gjør valutakalkulatoren?
   - Regner ut valutakursene til og fra alle tilgjengelige valutakurs
+  - Lagrer konverteringene dine i en txt som lages automatisk
 
 ### Funksjoner
   - Henter alle tilgjengelige valutaer fra API
+  - Lagrer konverteringer i en txt
   - Konverterer mellom to valgfrie valutaer
   - Viser både valutakode og fullt navn
   - Unngår unødvendige API kall
@@ -18,6 +20,7 @@
   - Python
   - Tkinter (GUI Rammeverk)
   - Tkinter ttk (Moderne widgets)
+  - Datetime (Dato, tid)
   - requests (HTTP-kall)
   - ExchangeRate-API (https://www.exchangerate-api.com/)
   - Git (Versjonskontroll)
@@ -47,5 +50,6 @@
 - main.py – GUI og brukerinteraksjon
 - api.py – API-kall og logikk
 - key.py – API-nøkkel (ikke inkludert i repo)
+
 
 

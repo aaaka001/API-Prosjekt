@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 from key import API_KEY # Henter API_KEY variabelen fra key.py
 from api import get_currency, convert_currency # Henter funksjonene fra api.py
+from datetime import datetime #Datetime for å hente tid for logg
 
 # Funksjon som viser resultat fra convert_currency!
 def conversion():
@@ -36,7 +37,15 @@ def conversion():
         messagebox.showerror("Feil", "Kunne ikke hente valutakurs.")
     else:
         result_label.config(text=f"{amount} {base} = {result:.2f} {target}")
+        save_log(amount, base, target, result)
 
+# Funksjon for å lage txt fil, skrive og lagre. 
+def save_log(amount, base, target, result):
+    now = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+    log_line = f"{now} | {amount} {base} -> {result:.2f} {target}\n"
+    
+    with open("oversettelse_logg.txt", "a", encoding="utf-8") as file:
+        file.write(log_line)
 
 root = tk.Tk() #Lager main framen
 root.title("Valutakalkulator")

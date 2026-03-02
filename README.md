@@ -1,3 +1,5 @@
+# Valutakalkulator
+
 - Funksjoner
   - Henter alle tilgjengelige valutaer fra API
   - Konverterer mellom to valgfrie valutaer
@@ -24,6 +26,7 @@
       - source .venv/bin/activate
       - pip install requests
   5. Kjør koden ved å skrive "python main.py" i terminalen.
+
 
 
 

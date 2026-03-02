@@ -4,8 +4,8 @@
   - Henter alle tilgjengelige valutaer fra API
   - Konverterer mellom to valgfrie valutaer
   - Viser både valutakode og fullt navn
-  - Unngår unødvendig API kall
-  - Debugging for
+  - Unngår unødvendige API kall
+  - Feilhåndtering for
     -  Ugyldig tall
     -  Ugyldig valutakode
     -  Samme valuta valgt
@@ -27,19 +27,19 @@
       - pip install requests
   5. Kjør koden ved å skrive "python main.py" i terminalen.
 
+### Starter ikke programmet? Sjekk at:
 
+  - Du har installert python3
+  - Du har installert requests
+  - Du har laget key.py med gyldig API_KEY
 
+### Får ugyldig valutakode
 
+  - Skriv valutakoden med STORE bokstaver
+  - Velg valuta i dropdown menyen
 
+## Prosjektstruktur
 
-
-
-
-
-
-
-
-
-
-
-
+- main.py – GUI og brukerinteraksjon
+- api.py – API-kall og logikk
+- key.py – API-nøkkel (ikke inkludert i repo)

@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import ttk, messagebox
+from tkinter import ttk, messagebox # ttk
 from key import API_KEY # Henter API_KEY variabelen fra key.py
 from api import get_currency, convert_currency # Henter funksjonene fra api.py
 from datetime import datetime #Datetime for å hente tid for logg
